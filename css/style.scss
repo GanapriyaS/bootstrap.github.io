@@ -1,7 +1,8 @@
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
-$background-pale: #DIC4E9;
+$background-pale: #D1C4E9;
+
 //height variables
 $carousel-item-height: 300px;
 // mixin
@@ -26,6 +27,11 @@ $carousel-item-height: 300px;
   background: $background-light;
   color:floralwhite;
 }
+#butt
+{
+  font-weight: bold;
+  color:white;
+}
 address
 {
   font-size: 80%;
@@ -46,9 +52,9 @@ body{
   padding: 10px;
 }
 // nesting caurosel
-.caurosel{
+.carousel{
   background: $background-dark;
-  .caurosel-item{
+  .carousel-item{
     height: $carousel-item-height;
     img{
       position: absolute;
@@ -58,8 +64,21 @@ body{
     }
   }
 }
-#cauroselButton{
+#carouselButton{
   right:0px;
   position: absolute;
   bottom: 0px;
+  z-index: 1;
+}
+.modal{
+.modal-header{
+  background:  $background-dark;
+  color:floralwhite;}
+.modal-content{
+  background: $background-pale;
+}
+.close
+{
+  color:floralwhite;
+}
 }

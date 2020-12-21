@@ -39,7 +39,7 @@
           </ul>
           <!-- link to trigger the hiding model m     navbar- textadd link include-->
           <span class="navbar-text">
-            <a id="log">
+            <a data-toggle="modal" data-target="#loginModal">
               <span class="fa fa-sign-in"></span> Login
             </a>
           </span>
@@ -51,7 +51,7 @@
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
           <div class="modal-header">
-              <h4 class="modal-title"><b>Login</b></h4>
+              <h4 class="modal-title">Login</h4>
             <!-- dismiss button -->
               <button type="button" class="close" data-dismiss="modal">
                 &times;
@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                   <!--  JS data-toggle="tooltip,model,popover"  data-html to make all html i.e stylised by html   title where content of tooltip all cover-->
-                  <a id="butt" class="btn btn-warning btn-block">Reserve Table</a>
+                  <a class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserve">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -352,18 +352,6 @@
            }
            });
          });
-       </script>
-       <!-- models via jquery js code -->
-       <script>
-         $(document).ready(function(){
-           $('#butt').click(function(){
-             $('#reserve').modal({backdrop:true});
-           });
-           $('#log').click(function(){
-             $('#loginModal').modal({backdrop:true});
-              // $('#loginModal').modal('show');
-           });
-           });
        </script>
 </body>
 
