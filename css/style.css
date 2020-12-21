@@ -21,6 +21,10 @@
   margin:0px auto;
   color: floralwhite;
 }
+.jumbotron a{
+  font-weight: bold;
+  color: white;
+}
 address{
   font-size:80%;
   margin:0px;
@@ -58,3 +62,9 @@ body{
   min-height: 300px;
 }
 /* img strecth to entire length */
+#carouselButton{
+  right:0px;
+  position: absolute;
+  bottom:0px;
+  z-index: 1;
+}
